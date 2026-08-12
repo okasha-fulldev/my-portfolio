@@ -683,44 +683,46 @@ img {
         padding: 9rem 5% 3rem;
     }
 
+    /* ---- Header ---- */
     .header {
-        padding: 1.5rem 5%;
+        padding: 1.2rem 5%;
     }
 
     .logo {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
 
+    /* Hamburger icon — now a direct child of header */
     #menu {
         display: block;
-        position: fixed;
-        top: 1.4rem;
-        right: 5%;
-        font-size: 3rem;
+        font-size: 2.8rem;
         cursor: pointer;
-        z-index: 200;
         color: var(--text-color);
+        z-index: 200;
+        margin-left: auto;   /* pushes it to the right */
     }
 
+    /* Hide Contact Me from header bar on mobile */
     .header > .btn {
         display: none;
     }
 
+    /* ---- Nav Drawer ---- */
     nav {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 70%;
-        max-width: 28rem;
+        width: 68%;
+        max-width: 27rem;
         height: 100vh;
         background: var(--second-bg-color);
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        padding: 7rem 3rem 3rem;
+        padding: 7rem 2.5rem 3rem;
         transition: right 0.35s ease;
         z-index: 150;
-        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.45);
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.5);
         overflow-y: auto;
     }
 
@@ -736,22 +738,31 @@ img {
 
     nav ul li {
         display: block;
-        margin: 0.8rem 0;
+        margin: 1rem 0;
     }
 
     nav ul li a {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
         margin-left: 0;
         display: block;
-        padding: 0.5rem 0;
+        padding: 0.6rem 0;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
     }
 
+    /* ---- Buttons ---- */
+    .btn {
+        font-size: 1.5rem;
+        padding: 0.65rem 1.5rem;
+        border-radius: 25px;
+    }
+
+    /* ---- Home ---- */
     .home {
         flex-direction: column-reverse;
         text-align: center;
         align-items: center;
         gap: 2rem;
-        background-size: cover;
+        padding-top: 10rem;
     }
 
     .content h1 {
@@ -763,7 +774,7 @@ img {
     }
 
     .home .container-images {
-        width: 80%;
+        width: 82%;
         height: auto;
         align-self: center;
     }
@@ -779,15 +790,15 @@ img {
         margin-top: 2rem;
     }
 
+    /* ---- About ---- */
     .about {
         flex-direction: column;
         text-align: center;
-        background-size: cover;
     }
 
     .about img {
-        width: 80%;
-        margin: 0 auto 3rem;
+        width: 78%;
+        margin: 0 auto 2.5rem;
     }
 
     .about-content h2 {
@@ -798,23 +809,24 @@ img {
         margin-left: 0;
     }
 
+    /* ---- Services ---- */
     .serves-content .services-box {
         flex: 1 1 100%;
     }
 
     .services-box i {
-        margin-top: 3rem;
+        margin-top: 2.5rem;
         font-size: 5rem;
     }
 
     .services-box p {
-        margin-bottom: 3rem;
+        margin-bottom: 2.5rem;
     }
 
+    /* ---- Skills ---- */
     .Skills {
         height: auto;
         min-height: 100vh;
-        background-size: cover;
     }
 
     .Skills .skills-row {
@@ -826,6 +838,7 @@ img {
         flex: 1 1 100%;
     }
 
+    /* ---- Contact ---- */
     .contact {
         margin-top: 3rem;
     }
@@ -847,7 +860,7 @@ img {
     }
 
     .heading {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
 }
 
@@ -864,8 +877,21 @@ img {
         font-size: 2rem;
     }
 
+    #menu {
+        font-size: 2.6rem;
+    }
+
+    .btn {
+        font-size: 1.4rem;
+        padding: 0.6rem 1.3rem;
+    }
+
     .content h1 {
         font-size: 2.8rem;
+    }
+
+    .content h3 {
+        font-size: 1.8rem;
     }
 
     .home .container-images {
@@ -873,7 +899,7 @@ img {
     }
 
     .about img {
-        width: 90%;
+        width: 88%;
     }
 
     .heading {
